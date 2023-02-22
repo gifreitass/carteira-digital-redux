@@ -1,14 +1,18 @@
 import { combineReducers, createStore } from "redux"
-import walletReducer from "./reducer"
+import walletReducer, { pageTheme } from "./reducer"
 
 export interface iStore {
     wallet: {
         total: 0
+    },
+    theme: {
+        currentTheme: "dark"
     }
 }
 
 const reducers = combineReducers({
-    wallet: walletReducer
+    wallet: walletReducer,
+    theme: pageTheme
 })
 
 const store = createStore(reducers)

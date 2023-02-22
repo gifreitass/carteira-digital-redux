@@ -11,3 +11,10 @@ export const removeMoneyAction = (money: number) => {
         payload: money
     }
 }
+
+export const themeAction = (actualTheme: string) => {
+    return {
+        type: "CHANGE_THEME",
+        payload: actualTheme
+    }
+}
