@@ -1,8 +1,9 @@
+import DigitalWallet from "./components/DigitalWallet"
+
 function App() {
 
   return (
-    <div>
-    </div>
+    <DigitalWallet />
   )
 }
 
